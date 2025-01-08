@@ -1,5 +1,6 @@
 # DepartmentsVacanciesDatabase-
-Created a data
+Created a database for job vacancies within different departments in a company. Used store procedures to insert multiple rows of data into each table accordingly. Also used stored procedures to complete tasks with tasks.pdf in relation
+to relational algebra using MySQL query language. 
 
 
 
