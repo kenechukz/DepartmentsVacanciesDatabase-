@@ -1,6 +1,24 @@
 # DepartmentsVacanciesDatabase-
-Created a database for job vacancies within different departments in a company. Used store procedures to insert multiple rows of data into each table accordingly. Also used stored procedures to complete tasks with tasks.pdf in relation
-to relational algebra using MySQL query language. 
+Created a database for job vacancies within different departments in a company. Used store procedures to insert multiple rows of data into each table accordingly. Also used stored procedures to complete tasks with tasks.pdf in relation to relational algebra using MySQL query language. 
+
+• Some of the constraints I had to implement were:
+
+1. One department can request many interviews for a position.
+2. One candidate can be invited to many interviews in relation to a position.
+3. One department can hire many candidates in relation to a position.
+4. Each candidate can have many skills.
+5. Each position can require many skills.
+6. NOTE: You must create table(s) and relationships that will allow you to represent the fact that interviews occur on particular dates. Your database should also represent whether a candidate is offered a position.
+
+
+To implement constraint 1, I allowed for the Interview table to have the same posid (which belongs to a particular deparment) for interviews whether it be the same candidate or a different candidate. 
+
+-The one thing that had to be unique was the interview date. "posid" is a foreign key that references the positions table and "candidateid" is a foreign key that references the candiate table. As you can see in row 1 and 2 of the Interview table, the posid and candidateid is the same, but the date is different. 
+
+-The position table has foreign key "deptid" which references the Department table, allowing for different posids in the same deptid. 
+
+-These two combined allows for many interviews for a position of a department.
+
 
 
 
